@@ -1,0 +1,18 @@
+.flex-container{
+    display: flex;
+    background-color: aqua;
+    height: 500px;
+    border: 1px solid black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-items{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 30px;
+
+}
