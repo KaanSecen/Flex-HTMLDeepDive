@@ -1,11 +1,16 @@
+html,body{
+    background-color: purple;
+}
+
 #fotoslider {
     display: flex;
     flex-direction: row;
     position: absolute;
     left: 0;
     transition-property: left;
-    transition-duration: 400ms;
-    transition-timing-function: ease-out;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(1,.01,0,.86);
+    box-shadow: 3px -6px 15px 15px rgba(0,0,0,0.55);
 }
 
 .foto{
@@ -25,4 +30,38 @@ img {
     height: 300px;
     overflow: hidden;
     width: 200px;
+}
+
+#flexmiddle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+#vorige-btn{
+    padding: 5px;
+    background-color: yellow;
+    color: green;
+    font-size: 25px;
+    border: white;
+}
+
+#volgende-btn{
+    padding: 5px;
+    background-color: yellow;
+    color: green;
+    font-size: 25px;
+    border: white;
+}
+
+#volgende-btn:hover{
+    cursor: pointer;
+    color: brown;
+}
+
+#vorige-btn:hover{
+    cursor: pointer;
+    color: brown;
 }
